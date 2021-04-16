@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gridarea & gridgap</title>
+	<style type="text/css">
+		html,body{
+			margin: 10px;
+			padding: 10px;
+			background-color: #ddd;
+		}
+		.bungkus{
+			width: 60%
+			margin: 50px auto;
+			display: grid;
+			/*grid-template-rows: [baris-mulai] 50px [baris1-akhir baris1-akhir] 100px [baris2-akhir];
+			grid-template-columns: 1fr 2fr 3fr;
+			grid-template-areas: 
+			'header header header'
+			'footer footer footer'
+			;*/
+/*
+			[bisa diakali dengan]*/
+			grid-template: [baris-mulai] 'header header header' 50px [baris1-akhir baris1-akhir] 'footer footer footer' 100px [baris2-akhir] / 1fr 2fr 3fr; /*#Row dulu baru colum*/
+		}
+		.item{
+		/*	width: 100%;*/
+			background-color: pink;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-sizing: border-box;
+	
+		}
+		.item:nth-child(even){
+			background-color: blue;
+		}
+		
+		</style>
+</head>
+<body>
+<div class="bungkus">
+<!-- 	<div class="item header">header</div>
+	<div class="item sidebar">sidebar</div>
+	<div class="item content">content</div>
+	<div class="item footer">footer</div> -->
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+	<div class="item">9</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		html,body{
+			margin: 10px;
+			padding: 10px;
+			background-color: #ddd;
+		}
+		.bungkus{
+			width: 90%
+			margin: 50px auto;
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			column-gap: 10px ;/* #agar ada jarak*/
+			row-gap: 10px;
+		}
+		.item{
+			background-color: pink;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-sizing: border-box;
+			padding: 100px;
+	
+		}
+		.item:nth-child(even){
+			background-color: blue;
+		}
+		
+	</style>
+</head>
+<body>
+<div class="bungkus">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+
+</div>
+</body>
+</html>

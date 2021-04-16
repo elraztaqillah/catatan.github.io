@@ -1,0 +1,81 @@
+			<!DOCTYPE html>
+			<html>
+			<head>
+			<title>Float</title>
+			<style>
+			body, html {
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			font-family: arial;
+			color: white;
+			text-transform: uppercase; /*#Mengubah huruf menjadi kapital*/
+			text-align: center;
+		
+
+			}
+			
+			.container {
+			width: 600px;
+			margin: 50px auto; /*#auto biar ketengah*/
+			border: 5px solid lightgreen;
+			box-sizing: border-box;
+			padding: 5px;
+			}
+			
+			
+			header {
+			background-color: pink;
+			padding: 40px 0;
+			}
+			.content::after { /*#Memaiakai sudo element, agar bungkusnya tdk collab(gabung) dgn element lain*/
+			content: '';
+			display: block;
+			clear: both;
+			}
+			.sidebar {
+			float: left;
+			width: 40%;
+			}
+			
+			.sidebar aside {
+			background-color: blue;
+			padding: 60px 0;
+			}
+			.sidebar nav{
+			background-color: red;
+			padding: 100px 0;
+			
+			}
+			
+			main {
+			background-color: gold;
+			padding: 171.5px;
+			box-sizing: border-box; /*#agar tdk terikat margin&padding*/
+			width: 60%;
+			float: right;
+			}
+			
+			footer {
+			background-color: black;
+			padding: 20px 0;
+			
+			
+			}
+			</style>
+			</head>
+			<body>
+			<div class="container">
+			<header>Header</header>
+			<div class="content">
+			<div class="sidebar">
+			<aside>Aside</aside>
+			<nav>Nav</nav>
+			</div>
+			<main>Main</main>
+			</div>
+			<footer>Footer</footer>
+			
+			</div>
+			</body>
+			</html>

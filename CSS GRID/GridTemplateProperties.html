@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GridAlignment | align[vertikal]</title>
+	<style type="text/css">
+		html,body{
+			margin: 10px;
+			padding: 10px;
+			background-color: #ddd;
+		}
+		.bungkus{
+			width: 80%
+			margin:  50px auto;
+			display: grid;
+			/*grid-template-columns: minmax(200px, 300px) 1fr 1fr; 
+			grid-template-rows: repeat(3, 100px);*/
+			
+			/*#berinama*/
+			grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr [empat];
+			grid-template-rows: [baris1] 100px [baris2] 100px [b-3] 100px [b4];
+			
+		}
+		.item{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.item.i1{
+			/*grid-column-start: 2;
+			grid-column-end: 4;
+			grid-row-start: 2;
+			grid-row-end: 4;*/
+
+			/*grid-column-start: 1;
+			grid-column-end: span 2; #span; menambah 2 kolom [tergantung nilai]
+			grid-row-start: 1;
+			grid-row-end: span 2;
+*/  
+			/*#Berinama*/
+		/*	grid-column-start: satu;
+			grid-column-end: empat;
+			grid-row-start: baris1;
+			grid-row-end: b4;*/
+
+			grid-row-start: -4;
+			grid-column-start: -1;
+			grid-row-end: -1;
+			grid-column-end: -2;
+/*
+			#Bisa di short hand sesuai dgn urutannya
+			grid-area: -4 / -1 / -1 / -2;*/
+			background-color: pink;
+
+		}
+	</style>
+</head>
+<body>
+<div class="bungkus">
+	<div class="item i1">1</div>
+	<div class="item i2">2</div>
+	<div class="item i3">3</div>
+	<div class="item i4">4</div>
+	<div class="item i5">5</div>
+	<div class="item i6">6</div>
+<!-- 	<div class="item i7">7</div>
+	<div class="item i8">8</div>
+	<div class="item i9">9</div> -->
+
+</div>
+</body>
+</html>

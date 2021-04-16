@@ -1,0 +1,320 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	overflow: ;
+}
+
+.hero {
+/*	height: 350px;*/
+min-height: 300px;
+	background-image: url(hero.png); /*1024*/
+	background-size: cover;
+	background-position: 0 -180px; /*-agar keatas*/
+/*	border-top: 5px solid white;
+	border-bottom: 5px solid lightskyblue;
+	background-repeat: no-repeat;*/
+	background-position: center;
+	padding: 50px;
+	
+
+}
+.main h2 {
+	padding: 15px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.main .penulis {
+	font-size: 11px;
+	margin-top: -5px;
+}
+
+.main .penulis a {
+	text-decoration: none;
+	color: darkgrey;
+}
+
+.main p {
+	margin: auto;
+	padding: auto;
+	font-size: 14px;
+	justify-content: left;
+}
+
+.sidebar {
+	width: 300px;
+	float: right;
+	padding-top: 42px;	
+
+}
+.sidebar h3 {
+	font-weight: bold;
+	color: darkgrey;
+}
+
+.sidebar img{
+	width: 70px;
+	float: left;
+	padding-right: 10px;
+	border-radius: 10px;
+}
+
+.sidebar p{
+	font: 12px/18px/*(jarak spasi)*/ arial;
+}
+
+.sidebar ul li {
+	display: inline-block;
+	
+	
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: darkgrey;
+	font-weight: bold;
+	padding: 5px;
+	margin: 20px;
+	box-sizing: border-box;
+	}
+
+.sidebar a:hover {
+	background-color: black;
+	color: white;
+}
+.container-empat{
+	max-width: 800px;
+	margin: 50px auto;
+	display: flex;
+}
+
+.card {
+	width: 50%;
+	border: 1px solid grey;
+	border-radius: 10px;/*#Agar ujung melengkung*/
+	background-color: white;
+	overflow: hidden; /*#Agar kotak dicontainer atas ngumpet*/
+	margin: 10px;
+	flex: 1;
+}
+.card.besar{
+	transform: scale(1.12);
+}
+
+.card .header{
+	background-color: ;
+	height: 150px;
+}
+.card .header .gambar{
+	background-image: url(hero.png);
+	height: 150px;
+	border-radius: 10px;
+}
+.card .header .gambar1{
+	background-image: url(hero.png);
+	height: 150px;
+	border-radius: 10px;
+}
+.card .header .gambar2{
+	background-image: url(hero.png);
+	height: 150px;
+	border-radius: 10px;
+}
+
+
+.card .content {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.container-dua {
+	max-width: 800px;     /*#Agar responsive ketika dizooom in/out*/
+	margin: 50px auto;
+	
+}
+
+.layanan {
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px; /*#Jarak jika posisi dibawah 600px*/
+}
+
+.layanan.satu {    /*jika titik diganti dgn space maka outputnya 'css tolong carikan layanan dan satu' */
+	background-color: lightblue;
+}
+
+.layanan.dua {
+	background-color: pink;
+}
+
+.layanan.tiga {
+	background-color: lightgreen;
+}
+
+.footer {
+	color: white;
+	background-color: black;
+	font-size: 11px;
+	text-align: center;
+	padding: 7px;
+}
+
+/*NavBAr*/
+nav {
+	display: flex;
+
+
+	
+	background-color: black;
+	justify-content: space-around;
+	/*padding: 20px 0;*/
+	height: 50px;
+	align-items: center; /*#padding bisa diganti ini Agar ketengah*/
+	color: white;
+}
+
+nav .logo {
+	font-family: 'Pacifico', cursive;
+	letter-spacing: 3px;  /*#Merenggangkan */
+}
+
+nav ul {
+	display: flex;
+	list-style: none; /*#Agar tidak ada titik2*/
+	width: 45%; /*Agar renggang*/
+	justify-content: space-between;
+
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none; /*#Agar hilang underline*/
+	font-size: 0.8em; /*#Mengecilkan font*/
+}
+
+
+/*Hamburger Menu*/
+.menu-toogle {
+	display: none;
+	flex-direction: column; /*#Turun Kebawah*/
+	height: 20px;
+	justify-content: space-between;
+	position: relative; /*#Non-Static [kebalikan position input*/
+	z-index: 999;
+}
+
+.menu-toogle input {
+	position: absolute; /*#Agar ngaturnya gampang*/
+	height: 27px;
+	width: 30px;
+	bottom: -1px;
+	left: -1px;
+	/*width: 40px;
+	height: 28px;
+	left: -5px;
+	top: -3px;*/
+	opacity: 0; /*#Agar transparan*/
+	cursor: pointer; /*#progress; ikon mouse loading*/
+	z-index: 2; /*#Agar checkbox didepan*/ 
+}
+
+.menu-toogle span {
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: white;
+	border-radius: 3px;
+	transition: all 0.5s; /*#Efek transition: */
+}
+
+
+/*Hamburger Menu Animation*/
+.menu-toogle span:nth-child(2) { /*#dihitung dari property input*/
+transform-origin: 0 0; /*#Agar porosnya dikir atas*/
+
+}
+
+.menu-toogle span:nth-child(4) { /*#dihitung dari property input*/
+transform-origin: 0 100%; /*#Agar porosnya kanan bawah*/
+
+}
+
+.menu-toogle input:checked ~ span:nth-child(2) { /*#ketika input di check cari ~(Sodara) span anak ke dua*/
+	transform: rotate(45deg) translate(-1px, -1px); /*#hasil dr tranlate; mundur 1 naik 1*/
+	background-color: white;
+
+}
+
+.menu-toogle input:checked ~ span:nth-child(4) { /*#ketika input di check cari ~(Sodara) span anak ke dua*/
+	transform: rotate(-45deg) translate(-1px, 0);
+	background-color: white;
+
+}
+
+.menu-toogle input:checked ~ span:nth-child(3) { /*#ketika input di check cari ~(Sodara) span anak ke dua*/
+	transform: scale(0);
+	opacity: 0;
+}
+
+/*Responsive Breakpoint*/
+
+/*Ukuran tablet*/
+@media screen and (max-width: 768px) { /*#576px utk ukuran mobile */
+	nav ul {
+		width: 50%;
+	}
+} 
+
+/*Ukuran Mobile*/
+@media screen and (max-width: 576px) { /*#576px utk ukuran mobile */
+	.menu-toogle {
+		display: flex;
+	}
+	nav ul {
+		position: absolute; 
+		right: 0;
+		top: 0;
+		width: 100%;
+		height: 100vh; /*#viewport height, jd tinggi layar yg kita lihat*/
+		flex-direction: column; /*#sejejer kebawah*/
+		background-color: black;
+		justify-content: space-evenly; /*#Agar atasnya & bawahnya sama*/
+		align-items: center;
+		z-index: 1; /*#supaya ngumpet*/
+		transform: translateX(100%); /*#agar ngumpet dia kekanan*/
+		transition: all 1s;		
+		opacity: 0;
+
+	}
+	nav ul.slide{
+		opacity: 1;
+		transform: translateX(0);
+	
+	}
+	.main p {
+	margin: auto;
+	padding: auto;
+	font-size: 10px;
+	text-align: center;
+	
+}
+.main h2{
+	font-size: 20px;
+}
+	.container-dua {
+		display: flex;
+	justify-content: space-between;
+	}
+
+	.layanan{
+	width: 30%;
+	}
+	.card{
+		width:30%;
+	}
+	/*BERFUNGSI JIKA BUKA DI WEB*/
+}
+} 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gridarea & gridgap</title>
+	<style type="text/css">
+		html,body{
+			margin: 10px;
+			padding: 10px;
+			background-color: #ddd;
+		}
+		.bungkus{
+			width: 80%
+			margin: 50px auto;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-areas: 
+			'header header header'
+			'sidebar sidebar sidebar'
+			'content content content'
+			'footer footer footer'
+			;
+		}
+		.item{
+			width: 100%;
+			background-color: pink;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 100px;
+			box-sizing: border-box;
+			margin:;
+		}
+		/*.item:nth-child(even){
+			background-color: blue;
+		}*/
+		.header{
+			grid-area: header;
+			background-color: yellow;
+		}
+		.sidebar{
+			grid-area: sidebar;
+			background-color: green;
+
+		}
+		.content{
+			grid-area: content;
+			background-color: purple;
+		}
+		.footer{
+			grid-area: footer;
+			background-color: lightgreen;
+		}
+
+		/*responsive breakpoint*/
+		@media	screen and (min-width: 576px) { /*#format jika diatas hp,#kecil pakai yg atas*/
+			.bungkus{
+			grid-template-areas: 
+			'header header header'
+			'sidebar content content'
+			'sidebar content content'
+			'footer footer footer'
+			;
+		}
+	}
+	</style>
+</head>
+<body>
+<div class="bungkus">
+	<div class="item header">header</div>
+	<div class="item sidebar">sidebar</div>
+	<div class="item content">content</div>
+	<div class="item footer">footer</div>
+<!-- 	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div> -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GridAlignment | Grid Area</title>
+	<style type="text/css">
+		html,body{
+			margin: 0px;
+			padding: 0px;
+			background-color: #ddd;
+		}
+		.bungkus{
+			width: 80%;
+			margin:  50px auto;
+			display: grid;
+			grid-template-columns: minmax(200px, 300px) 1fr 1fr; 
+			grid-template-rows: repeat(3, 100px);
+			
+			/*#berinend
+		/*	
+			grid-template-areas: 
+			'header header header'
+			'sidebar sidebar sidebar'
+			'footer footer footer';*/
+			
+		}
+		.item{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		.header{
+	
+			background-color: lightblue;
+			justify-self:start;
+			/*justify-self: end;
+			justify-self: center;
+			justify-self: stretch;*/
+
+		}
+
+
+		}
+		
+	</style>
+</head>
+<body>
+<div class="bungkus">
+	<div class="item header">1</div>
+	<div class="item sidebar">2</div>
+	<div class="item content">3</div>
+	<div class="item footer">4</div>
+<!-- 	<div class="item i7">7</div>
+	<div class="item i8">8</div>
+	<div class="item i9">9</div> -->
+
+</div>
+</body>
+</html>

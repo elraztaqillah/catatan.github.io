@@ -1,0 +1,15 @@
+body {
+	background-color: lightblue;
+	background-image: url(download.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	sumbu y= top,center,bottom x=left,center,right
+/*background-color
+background-image
+background-position;mengatur posisi gambar
+background-repeat; pengulangan gambar pd background
+(repeat-x/y, no-repeat*/
+}
+
+singkatan
+background: color url() position repeat;

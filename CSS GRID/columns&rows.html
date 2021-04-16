@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>columns & rows</title>
+	<style type="text/css">
+		html, body{
+			margin: 0;
+			padding: 0;
+			background-color: white;
+						}
+		.container {
+			width: 60%;
+			margin: 50px auto;
+			display: grid;
+			grid-template-columns: 200px 100px 200px;
+			grid-template-rows: 100px;/* #shortcut (gtr enter)*/
+		}
+		.item{
+			background-color: blue;
+			display: flex;	/*#afgar ketengah*/
+			justify-content: center;
+			text-align: center;
+		}
+		.item:nth-child(even) {
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>explicit&implicit</title>
+	<style type="text/css">
+		html, body{
+			margin: 0;
+			padding: 0;
+			background-color: white;
+						}
+		.container {
+			width: 60%;
+			margin: 50px auto;
+			display: grid;
+			grid-template-columns: 100px 50px; /*#explicit= garis tengah putus2*/
+												/*#IMPLICIT= columns & ROWS YG SDH DITENTUKAN*/
+			/*grid-template-rows: 100px 200px 200px;
+			grid-auto-rows: 200px;*/
+			grid-template-rows: 200px 50px;
+			grid-auto-flow: column; /*#AGAR JADI KOLOM*/
+			/*grid-auto-columns: 200px;*/
+		}
+		.item{
+			background-color: skyblue;
+			display: flex;	/*#afgar ketengah*/
+			justify-content: center;
+			text-align: center;
+		}
+		.item:nth-child(even) {
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="item">1</div>
+	<div class="item">2</div>
+	<div class="item">3</div>
+	<div class="item">4</div>
+	<div class="item">5</div>
+	<div class="item">6</div>
+	<div class="item">7</div>
+	<div class="item">8</div>
+	<div class="item">9</div>
+</div>
+
+</body>
+</html>
