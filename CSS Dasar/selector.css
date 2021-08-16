@@ -1,0 +1,22 @@
+h1, h2 {
+  color: red;} 
+/* jika samatanda , itu dan bisa langsung digabungkan */
+
+ul li a {
+  color:  green;} 
+/* jika berbeda bisa pakai spasi */
+#p1 {
+  color: gold;}
+.p2 {
+  color: blue;}
+/* bisa pake id&class jika terdapat kesamaan 
+id = #, class = .*/
+
+.cetak-dua {
+  font-weight: bold;
+}
+p.cetak-dua {
+  font-size: 10px;}
+/* (css memerintahkan p.=paragraf,sehingga pada bagian a.(link) tidak bekerja) */
+
+/* complex selector// gunakan html dulu jika tidak baru class  */

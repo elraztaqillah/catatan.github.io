@@ -1,0 +1,6 @@
+body {
+  color: red;
+}
+a {color: inherit;}
+
+/* agar bisa ngikutin a dengan warna body sebelumnya maka, a { color:  inherit; } */

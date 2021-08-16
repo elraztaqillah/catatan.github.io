@@ -1,0 +1,37 @@
+.hello:link {
+  color: orange;}
+/* (:link) akan bekerja jika didalamnya terdapat link */
+
+.hello:hover {
+  color: green;
+  font-family: arial;
+  font-size: 20px;}
+/* berubah ketika mouse diarahkan ke text */
+.hello:active {
+  font-style: italic;}
+/* bila diklik lama akan menjadi miring */
+
+.hello:visited {
+  color: red;}
+/* berubah warna jika sdh pernah mengunjungi link */
+
+/* ------------------------------------- */
+
+li:last-child a {
+  color: green;}
+/* bisa first/last */
+
+li:nth-child(even) a {
+  color: gold;}
+/* 1; bisa angka
+2n; kelipatan 2
+3n-2; kelipatan 3 dimulai dari 1 / 3n+1; kelipatan 3 ditambah 1
+even/odd; ganjil/genap */
+li:nth-child(even) a:hover {
+  color: black;} 
+/* jadi hitam */
+
+p:first-of-type {
+  color: red;}
+/* bisa pakai first/last */
+

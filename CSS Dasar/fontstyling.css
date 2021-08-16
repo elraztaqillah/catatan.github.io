@@ -1,0 +1,22 @@
+/*font-family; mengatur jenis font yg akan digunakan
+font-size; mengatur ukuran
+font-weight; ketebalan font
+font-variant; mengubah font jadi small caps
+font-style; mengubah menjadi miring
+line-height; mengatur spasi antar baris
+*/
+
+h1 
+{
+	font-family: arial, vendana, sans-serif /*(sans-serif; tidak ada cabang setiap huruf )*/
+	font-size: 1000px;  /*;px,%,em*/
+	font-weight: normal;        /*lighter,normal,100-900,bold,border*/
+	font-variant: small-caps; 				/*normal,small-caps;hurufkapital jadi tebal, huruf kecil jadi kapital */
+	font-style: italic;   /*normal,italic,oblique*/
+	line-height: 120px
+}
+
+p {
+
+	font: italic normal bold 100px/120px arial, vendana, sans-serif;
+	}

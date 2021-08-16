@@ -1,0 +1,34 @@
+/* color
+text-align; mengatur rata kiri,tengah,kanan
+text-indent; identasi pada paragraph
+text-decoration; memberikan underline
+text-transform;mengubah huruf besar,kecil,semua
+letter-spacing; mengatur spasi antar huruf
+word-spacing; mengatur spasi antar kata */
+
+h1 {
+  font-size: 150px;
+  color: rgb(50, 168, 82); 
+/*   bisa nama warna,hexa/rgb
+  hexa= # rgb () */
+  text-align: left; 
+/*   left;kiri,right;rta kanan,center; tengah,justify;rata kiri&kanan */
+text-transform: 
+}
+p {
+  text-align: justify;
+  text-indent: 100;
+/*   bisa %/px */
+  text-decoration: underline;
+/*   underline; garisbawah, overline; atasbawah, line-through; mencoret */
+  text-transform: capitalize;
+/*   capitalize; huruf awal jadi besar
+  lowercase; kecil semua
+  uppercase; besar semua */
+  letter-spacing: 10px;
+  word-spacing:
+/*   pilihan normal/px */
+  
+}
+a {text-decoration: none;
+}
