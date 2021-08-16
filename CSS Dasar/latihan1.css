@@ -1,0 +1,7 @@
+h1 { color: white; text-align: center } /*berarti pada bagian h1 diubah warnanya menjadi greeen*/
+selecttor { property: value; }
+
+/*[Menambahkan css]*/
+/*<link rel="stylesheet" href="latihan1.css"> menambahkan css dengan exernal*/
+/*<p style="color: green;"></p> menambahkan pada barisan form internal*/
+/*<style></style> menambahkan pada form langsung*/
