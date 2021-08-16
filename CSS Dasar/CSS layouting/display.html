@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.navigasi {background-color: pink;}
+		.main{background-color: blue;}
+		.main span{background-color: lightgreen;} /*menambahkan warna pada kalimat yg sudah diberi background sebelumnya*/
+
+		img	{width: 200px; height: 200px;}
+		a {background-color: red; 
+			width: 200px; height: 200px; 
+			display: inline-block;} /*#dgn inline block dpt kita atur pxl, biasanya utk navigasi */
+
+		h1, h2, div{  /*#karena termasuk block maka bisa menggunakan pxl*/
+			background-color: purple;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+
+<div>   <!-- div(pengelompokkan) -->
+	<h1>Belajar Display</h1>
+</div>
+
+<div class="navigasi">
+	<h2>Daftar Link</h2>
+	<a href="#">Link 1</a>
+	<a href="#">Link 2</a>
+	<a href="#">Link 3</a>
+	<a href="#">Link 4</a>	
+</div>
+
+<div class="main"> <!-- main; bagian utama -->
+	<h2>Judul Artikel</h2>
+	<img src="../download.png">
+	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. <span>Duis aute irure</span> dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<di class="copyright">
+	<p>Copyright | 2021</p>
+</di>
+
+
+</body>
+</html>
+
+<!-- CATATAN
+Display; 1.inline; tags; b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea. untuk lebar kekanan/horizontal, hanya img yg merupakan inline dapat diatur width&heightnya
+,inline-block
+, block ; elemennya: h1-h6, p, ol, ul, li, form, hr, div
+, none; utk menghilangkan -->
+
+<!-- ul>li*5>a[href=#]{Link$}	sytax plug in name elmet -->

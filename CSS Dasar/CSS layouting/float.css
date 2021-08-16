@@ -1,0 +1,44 @@
+.container {
+	width: 600px;
+	margin:  auto; /*jarak dari luar sisi halaman*/
+	border: 5px solid black;
+	padding: 5px; /*+- dalam halaman*/
+}
+
+.kotak {
+	width: 80px;
+	height: 80px;
+	color: white;
+	background-color: salmon;
+	text-align: center;
+	line-height: 80px; /*baris ditengah gambar*/
+	font-size: 20px;
+	float: left;
+}
+
+.clear {
+	clear: left;
+}
+/*
+.satu, .dua, .tiga {
+	width: 100px;
+	height: 100px;
+}
+
+.satu {
+	background-color: salmon;
+}
+
+.dua {
+	background-color: limegreen;
+	float: left;
+	margin-left: 10px;
+	float: left;
+}
+.tiga 
+{
+	background-color: lightskyblue;
+}
+
+/*float, left; akan menutup si biru
+		right; akan pindah kekanan bottom*/

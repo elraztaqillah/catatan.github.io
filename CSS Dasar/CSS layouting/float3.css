@@ -1,0 +1,18 @@
+.container {
+	width: 600px;
+	margin:  auto; /*jarak dari luar sisi halaman*/
+	border: 5px solid black;
+	padding: 5px; /*+- dalam halaman*/
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	float: left; /*mengelilingi gambar*/
+}
+
+.clear {
+	clear: left; /*overflow: auto;*/
+	/*fungsi clear: untuk membersihkan float*/
+/*}nilai clear; left, right, both(bila terdapat dua nilai)*/
+
